@@ -3,7 +3,7 @@ import bannerImg from "../assets/banner-stack.png"
 const Banner = () => {
     return (
         <div>
-            <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-10 px-6 py-16 md:flex-row md:py-20">
+            <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-10 px-6 py-16 md:flex-row md:py-12">
                 <div className="flex-1">
                     <div className="mb-6">
                         <h1 className="text-4xl font-bold  text-gray-900 md:text-5xl lg:text-6xl">
