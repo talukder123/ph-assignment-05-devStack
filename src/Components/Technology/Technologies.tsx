@@ -29,7 +29,7 @@ const Technologies = ({ techPromise }: ItechProps) => {
                     </p>
                 </div>
             </div>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
+            <div className="container mx-auto grid grid-cols-1 gap-6 md:grid-cols-4">
                 <div className="md:col-span-3">
                     <AvailableTech Technologies={Technologies} selectedTech={selectedTech} setSelectedTech={setSelectedTech}></AvailableTech>
                 </div>
