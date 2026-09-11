@@ -15,15 +15,15 @@ const Banner = () => {
                     </div>
 
                     <p className="mb-14 max-w-xl text-base leading-7 text-gray-700 md:text-lg">
-                        Explore frontend, backend, database, and tooling options,<br/>
+                        Explore frontend, backend, database, and tooling options,<br />
                         compare them side by side, and put together the stack that fits
                         your next project.
                     </p>
 
                     <div className="flex flex-wrap gap-4">
-                        <button className="cursor-pointer rounded-xl bg-linear-to-r from-orange-500 to-pink-500 px-6 py-3 font-semibold text-white transition-opacity hover:opacity-80">
+                        <a href="#allTech" className="cursor-pointer rounded-lg bg-linear-to-r from-orange-500 to-pink-500 px-6 py-3 font-semibold text-white transition-opacity hover:opacity-80">
                             Explore Technology
-                        </button>
+                        </a>
 
                         <button className="cursor-pointer rounded-xl border border-gray-300 px-10 py-3 font-semibold text-gray-600 transition hover:bg-gray-100">
                             Learn More

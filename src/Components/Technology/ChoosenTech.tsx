@@ -9,7 +9,7 @@ interface IchosenTechProps {
 
 const ChoosenTech = ({ selectedTech, setSelectedTech }: IchosenTechProps) => {
     return (
-        <div>
+        <div className='mx-5 md:mx-0'>
 
             <ChoosenTechCard selectedTech={selectedTech} setSelectedTech={setSelectedTech}></ChoosenTechCard>
 

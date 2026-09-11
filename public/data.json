@@ -93,7 +93,7 @@
     "id": "java",
     "name": "Java",
     "category": "Language",
-    "description": "A popular object-oriented programming language used for enterprise applications, backend systems, and Android development.",
+    "description": "A popular object-oriented language used for backend systems, and Android development.",
     "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",

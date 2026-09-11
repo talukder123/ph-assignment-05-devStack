@@ -3,8 +3,8 @@ import hamburger from "../assets/hamburger.png";
 
 const Nav = () => {
     return (
-        <div>
-            <div className="sticky top-0 z-50 w-full bg-base-100 shadow-sm">
+        <div className="sticky top-0 z-50 w-full bg-white shadow-sm">
+            <div className="">
                 <div className="container mx-auto max-w-7xl px-4 py-3 md:px-6 md:py-4">
 
                     <div className="flex items-center justify-between md:hidden">

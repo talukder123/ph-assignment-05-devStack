@@ -10,7 +10,7 @@ interface IavailableProps {
 
 const AvailableTech = ({Technologies, selectedTech, setSelectedTech}: IavailableProps) => {
     return (
-        <div className='grid grid-cols-3 gap-4'>
+        <div className='mx-5 grid grid-cols-1 gap-4 md:grid-cols-3'>
             {
                 Technologies.map((tech:ITechType, index:number) => {
                     return (
