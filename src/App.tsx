@@ -13,8 +13,6 @@ const TechnologyFetch = async (): Promise<ITechType[]> => {
   return data;
 }
 
-
-
 function App() {
 
   const [techPromise] = useState(TechnologyFetch)
@@ -25,13 +23,16 @@ function App() {
       <Nav></Nav>
       <Banner></Banner>
 
-      <Suspense fallback={<h2>"Loading..."</h2>}>
-         <Technologies techPromise={techPromise}></Technologies>
+      <Suspense fallback={<h2 className="flex min-h-50 items-center justify-center text-lg font-semibold text-gray-600 sm:text-xl md:min-h-75">
+        Loading technologies... </h2>}
+      >
+
+      <Technologies techPromise={techPromise}></Technologies>
       </Suspense>
+
       <ToastContainer position="bottom-right" />
       <Footer></Footer>
-      </>
-      
+    </>
   )
 }
 

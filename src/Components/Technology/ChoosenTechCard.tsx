@@ -54,13 +54,10 @@ const ChoosenTechCard = ({ selectedTech, setSelectedTech }: IchosenTechCardProps
                                 </div>
 
                                 <button
-                                    onClick={() => {
-                                        setSelectedTech((prev) =>
-                                            prev.filter((item) => item.id !== tech.id)
-                                        );
-
+                                    onClick={() => { setSelectedTech((prev) => prev.filter((item) => item.id !== tech.id));
                                         toast.error(`${tech.name} removed from your stack!`);
                                     }}
+                                    
                                     className="cursor-pointer rounded-lg p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600 transition"
                                 >
                                     <IoClose size={18} />

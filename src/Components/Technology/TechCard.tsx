@@ -6,8 +6,6 @@ interface ITechCardProps {
     tech: ITechType,
     selectedTech: ITechType[],
     setSelectedTech: Dispatch<SetStateAction<ITechType[]>>
-
-
 }
 
 const TechCard = ({ tech, selectedTech, setSelectedTech }: ITechCardProps) => {
@@ -26,7 +24,7 @@ const TechCard = ({ tech, selectedTech, setSelectedTech }: ITechCardProps) => {
 
             <div className={`flex flex-col justify-between rounded-2xl border p-6 shadow-sm
                     ${isSelected
-                    ? "border-pink-300 bg-pink-100"
+                    ? "border-2 border-pink-400"
                     : "border-gray-50 bg-white hover:shadow-md"
                 }  `}>
 
@@ -77,15 +75,14 @@ const TechCard = ({ tech, selectedTech, setSelectedTech }: ITechCardProps) => {
 
                     <button onClick={() => handleChosenTech()}
                         disabled={isSelected}
-                        className={`mt-5 w-full rounded-xl py-3 text-sm font-semibold text-white transition ${isSelected
-                            ? "cursor-not-allowed bg-red-300"
-                            : "cursor-pointer bg-[#0B0F19] hover:bg-gray-800"
+                        className={`mt-5 w-full rounded-xl py-3 text-sm font-semibold  transition ${isSelected
+                            ? " text-pink-600 cursor-not-allowed bg-pink-100"
+                            : " text-white cursor-pointer bg-[#0B0F19] hover:bg-gray-800"
                             }`}>
                         {isSelected ? "✓ Added to Stack" : "Add to Stack"}
                     </button>
                 </div>
             </div>
-
 
         </div>
     );

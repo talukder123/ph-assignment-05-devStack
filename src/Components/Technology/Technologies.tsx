@@ -38,8 +38,6 @@ const Technologies = ({ techPromise }: ItechProps) => {
 
             </div>
 
-
-
         </div>
     );
 };
