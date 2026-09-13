@@ -24,7 +24,7 @@ const TechCard = ({ tech, selectedTech, setSelectedTech }: ITechCardProps) => {
     return (
         <div>
 
-                <div className={`flex flex-col justify-between rounded-2xl border p-6 shadow-sm
+            <div className={`flex flex-col justify-between rounded-2xl border p-6 shadow-sm
                     ${isSelected
                     ? "border-pink-300 bg-pink-100"
                     : "border-gray-50 bg-white hover:shadow-md"
@@ -36,7 +36,11 @@ const TechCard = ({ tech, selectedTech, setSelectedTech }: ITechCardProps) => {
                         <img src={tech.icon} alt={tech.name} className="h-8 w-8 object-contain" />
 
                         {tech.badge && (
-                            <span className="rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-pink-600">
+                            <span className="rounded-full px-3 py-1 text-xs font-semibold"
+                                style={{
+                                    color: tech.brandColor,
+                                    backgroundColor: `${tech.brandColor}15`,
+                                }}>
                                 {tech.badge}
                             </span>
                         )}
@@ -52,11 +56,11 @@ const TechCard = ({ tech, selectedTech, setSelectedTech }: ITechCardProps) => {
                     </p>
                 </div>
 
-    
+
                 <div className="mt-6">
-                    
+
                     <div className="flex items-center justify-between text-xs font-medium">
-                        
+
                         <span className="rounded-md bg-gray-100 px-3 py-1 text-gray-600">
                             {tech.category}
                         </span>
